@@ -331,3 +331,14 @@ figure .btn--blue #btnShop{
 .about__wrapper img{
     width: 100%;
 }
+/* ---------------------Mission Sections----------------- */
+.mission{
+    height: 30rem;
+}
+.svg{
+    overflow: hidden;
+}
+.text--centered{
+    text-align: center;
+    font-size: 1.4em;
+}
