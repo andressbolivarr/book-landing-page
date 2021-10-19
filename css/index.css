@@ -265,7 +265,7 @@ section{
 }
 .wrapper--smaller{
     height: 100%;
-    width: 40% !important;
+    width: 50% !important;
 }
 .paragraph__wrapper{
     height: 100%;
@@ -323,7 +323,6 @@ figure .btn--blue #btnShop{
 }
 /* -------------------About Section--------------------- */
 .about__wrapper{
-    background-color: olivedrab;
     justify-content: space-around;
     width: 80%;
     height: 80%;
