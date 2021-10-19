@@ -22,21 +22,34 @@ body{
 .pink{background: #FAB3AD;}
 .green{background: #ABC754}
 .white{background: white;}
+.light-pink{background: #FFF3EE;}
 
+.--dark-blue{color: #0F676E;}
 .--blue{ color: #6bd8dd;}
-.--light-blue{color: #F2FAFF;}
+.--mid-blue{color: #51A8B7;}
+.--light-blue{color:#87D5DB;
+    ;}
+
 .--gold{color: #F6D757;}
 .--lilac{color: #99A7D5;}
 .--pink{color: #FAB3AD;}
 .--green{color: #ABC754;}
 .--orange{color: #FFBE76;}
-.--dark-blue{color: #0F676E;}
 .--white{color: white;}
+
+
+
 /* Modifiers */
 .flex-column{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.flex-column--center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .flex{
     display: flex;
@@ -56,6 +69,15 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
+}
+.short{
+    width: 80%;
+}
+.big3{
+    font-size: 2rem;
+}
+.big1{
+    font-size: 1.5rem;
 }
 /* -------------------Header------------------ */
 header{
@@ -121,19 +143,17 @@ main{
     width: 90%;
 }
 /* Main left content */
-.container__left{
+.section__left{
     background-color: palegoldenrod;
     width: 65%;
 }
-/* .left__wrapper{
-    background-color: palevioletred;
-} */
+
 /* Main right content */
-.container__right{
+.section__right{
     width: 35%;
     height: 90%;
 }
-.container__right h1{
+.section__right h1{
     width: 60%;
 }
 .main__list{
@@ -147,9 +167,6 @@ main{
 .main__list__items{
     justify-content: unset;
     text-align: right;
-}
-.list__imgWrapper{
-    background-color: red;
 }
 .list__imgWrapper img{
 width: 100%;
@@ -199,6 +216,9 @@ figure{
 .--book{
     font-family: 'Book';
 }
+.--brydan{
+    font-family: 'Brydan';
+}
 .figure--sm{
     height: 8rem;
     width: 100%;
@@ -211,13 +231,103 @@ section{
 .section--sm{
     height: 21rem;
 }
-section .left__wrapper{
-    width: 20%;
-    background: hotpink;
+.section--bg{
+    height: 40rem;
 }
-section .right__wrapper{
+.section__wrapper{
+    width: 70%;
+    height: 80%;
+    align-content: unset;
+}
+.section__wrapper--bigger{
+    width: 100%;
+    height: 36rem;
+}
+.section__wrapper .left__wrapper{
+    width: 30%;
+}
+.section__wrapper  .right__wrapper{
     width: 50%;
 }
-section .right__wrapper .img__wrapper img{
+.section__wrapper .right__wrapper .img__wrapper img{
+    width: 80%;
+}
+.section__wrapper h3{
+    font-size: 3rem;
+}
+.section__wrapper p {
+    font-size: 1.5rem;
+}
+/* Componend Section */
+/* Left Section */
+.h3__wrapper{
     width: 60%;
+}
+.wrapper--smaller{
+    height: 100%;
+    width: 40% !important;
+}
+.paragraph__wrapper{
+    height: 100%;
+    width: 60%;
+}
+/* Right Section */
+.wrapper--bigger{
+    height: 90%;
+    width: 50% !important; 
+}
+.about__wrapper{
+    background-attachment: fixed;
+}
+.h1__wrapper{
+    width: 40%;
+}
+ .h1__wrapper h1{
+    position: relative;
+    left: 6rem;
+} 
+.wrapper--bigger .img__wrapper{
+    height: 20rem;
+}
+.wrapper--bigger .img__wrapper img{
+    width: 75%;
+}
+.btn__wrapper{
+    padding: 1rem;
+}
+.btn__wrapper label{
+    padding: 1rem;
+    font-size: .7rem;
+}
+/* -------------------Cards Section-------------------- */
+.section__cards{
+    height: 80%;
+    width: 90%;
+}
+.card{
+    width: 25%;
+    height: 95%;
+    border-radius: 10%;
+}
+.card__wrapper{
+    width: 100%;
+    height: 100%;
+}
+.card__center{
+    width: 60%;
+    text-align: center;
+}
+/* --------------------Second Figure Section--------------- */
+figure .btn--blue #btnShop{
+    background-color: #6bd8dd;
+}
+/* -------------------About Section--------------------- */
+.about__wrapper{
+    background-color: olivedrab;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+}
+.about__wrapper img{
+    width: 100%;
 }
